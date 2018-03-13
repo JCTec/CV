@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+</head>
+<body>
+
+	<script>
+
+		window.onload = function() {
+    		// similar behavior as clicking on a link
+    	
+    		var userLang = navigator.language || navigator.userLanguage; 
+
+    		var lang = userLang.split('-');
+
+    		var superLang = lang[0];
+
+			if(superLang === 'es'){
+				window.location.replace("https://jctec.github.io/CV/es.html");
+			}else{
+				window.location.replace("https://jctec.github.io/CV/en.html");
+			}
+		}
+
+    </script>
+
+</body>
+</html>
