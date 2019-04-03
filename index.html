@@ -1,34 +1,402 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+
 <head>
-<title>Page Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Juan Carlos Estévez - Resume</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <style>
+        #google_translate_element{
+            float: right;
+        }
+    </style>
 </head>
+
 <body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
 
-	<script>
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
 
-		window.onload = function() {
-    		// similar behavior as clicking on a link
-    	
-    		var userLang = navigator.language || navigator.userLanguage; 
+        </ul>
 
-    		var lang = userLang.split('-');
+        <div id="google_translate_element"></div>
 
-    		var superLang = lang[0];
+    </header>
 
-            window.location.replace("https://jctec.github.io/CV/es.html");
+    <div id="lead">
+        <div id="lead-content">
+            <div class="row" id="lead-row">
+                <div class="col-sm-4" id="lead-image">
+                    <img src="images/me.jpg" alt="Me!" class="img-responsive img-circle" />
+                </div>
+                <div class="col-sm-8">
+                    <h1 class="notranslate">JC Estevez</h1>
+                    <h2 class="notranslate">Software Engineer</h2>
+                </div>
+            </div>
+        </div>
 
-/*
-            if(superLang === 'es'){
-				window.location.replace("https://jctec.github.io/CV/es.html");
-			}else{
-				window.location.replace("https://jctec.github.io/CV/en.html");
-			}
-			*/
-		}
+        <div id="lead-overlay"></div>
 
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        My name is Juan Carlos Estevez i'm a programming and tech lover, I have been making code since I was 14 years old.
+                        Currently Chief director of the leadership group in the Anahuac University and also technology development coordinator in the
+                        Student Society and i'm starting up a company with my friend from school to help students in need. In my free time I enjoy arts, cinema and dancing, I like to think of my self as citizen of the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <a href="https://itunes.apple.com/mx/app/ibase/id1346871946"><img src="images/iBase_app.png" /></a>
+                    </div>
+
+                    <div class="project-info">
+                        <h3><a href="https://itunes.apple.com/mx/app/ibase/id1346871946">iBase</a></h3>
+                        <p>
+                            First iOS App that's already on the AppStore, it offers instant conversion between bases 2(Binary),
+                            8(Octal), 10(Decimal) and 16(Hexadecimal).
+                        </p>
+
+                        <p>Language: Swift 4.2</p>
+                        <p>Other Tools: CocoaPods.</p>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/generaiOS.png" />
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Genera iOS</h3>
+                        <p>
+                            Genera iOS is an App develop for the leadership group of the Anahuc Mayab University. It lets us manage all the events we
+                            organized. (Ongoing)
+                        </p>
+
+                        <p>Language: Swift 4.2</p>
+                        <p>Other Tools: CocoaPods.</p>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/admisiones.jpg" />
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Admisiones Anahuac Mayab</h3>
+                        <p>
+                            As part of my social service at the Anahuac Mayab University, I created an admissions system in which
+                            Applicants to the university will be able to fill out their information on this page and the administrators will be able to administer
+                            these students. (The Project Was Set On Hold For Administrative Reasons).
+                        </p>
+
+                        <p>Framework: Laravel</p>
+                        <p>Other Tools: HTML, CSS, JS, npm, Composer.</p>
+                    </div>
+                </div>
+
+
+                <div class="project shadow-large">
+                    <div class="project-image" style="overflow: hidden;">
+                        <img src="images/lit.png" height="400px"/>
+                    </div>
+
+                    <div class="project-info">
+                        <h3><a href="http://lit.anahuacmayab.mx" style="cursor: pointer;">LIT Anahuac Mayab</a></h3>
+
+                            <p>The University Anahúac Mayab hired me to develop the a platform for a students contest they host each year called LIT,
+                            for the version 1.0 we delivered a software that was able to administer the 1,000 Students of the contest, create,
+                            teams assign the students to a team and a module that creates the rules of each contest section. Alongside the
+                            administrative part of the software each student had a profile page containing the awards in these contest,
+                            they were also able to login and edit the profile basic data. </p>
+
+                            <p>The software was develop alongside 2 other developers, I was the Project Manager and also lead developer and in the production
+                            face I managed the Server and the upload of the project to it. </p>
+
+                            <p>Framework: Laravel</p>
+                            <p>Other Tools: HTML, CSS, JS, npm, Composer.</p>
+
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <a href="https://xplain.mx"><img src="images/Xplain_Logo.png" height="350px" /></a>
+                    </div>
+
+                    <div class="project-info">
+                        <h3><a href="https://xplain.mx">Xplain</a></h3>
+                        <p>
+                            Xplain is a students app develop by a friend of mine and I that connects you with your Mentor. A mentor is more than just a teacher,
+                            a Mentor is a student that already have pass the same challenges as you.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <a href="https://xplain.mx/web"><img src="images/xplainWeb.png" height="350px" /></a>
+                    </div>
+
+                    <div class="project-info">
+                        <h3><a href="https://xplain.mx/web">Xplain API</a></h3>
+                        <p>
+                            Xplain API is a state of the art API that connects the mobile versions of Xplain with the Database
+                            and displays the web version created with Blade Templates.
+                        </p>
+
+                        <p>Framework: Laravel</p>
+                        <p>Other Tools: HTML, CSS, JS, npm, Composer.</p>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <a href="https://itunes.apple.com/mx/app/xplain/id1361837106?mt=8"><img src="images/xplainiOS.jpeg"/></a>
+                    </div>
+
+                    <div class="project-info">
+                        <h3><a href="https://itunes.apple.com/mx/app/xplain/id1361837106?mt=8">Xplain iOS</a></h3>
+                        <p>
+                            Xplain iOS is a state of the art App that let you connect with the Mentor of your choice at the time
+                            of your choice.
+                        </p>
+
+                        <p>Language: Swift 4.2</p>
+                        <p>Other Tools: CocoaPods.</p>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <a href="https://itunes.apple.com/mx/app/xplain-mentor/id1362044111"><img src="images/mentor.png"/></a>
+                    </div>
+
+                    <div class="project-info">
+                        <h3><a href="https://itunes.apple.com/mx/app/xplain-mentor/id1362044111">Xplain Mentor iOS</a></h3>
+                        <p>
+                            Xplain iOS is a state of the art App that let you as a Mentor connect with the Students that need
+                            help in subject you are good at.
+                        </p>
+
+                        <p>Language: Swift 4.2</p>
+                        <p>Other Tools: CocoaPods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Swift 4</li>
+            <li>Laravel 5</li>
+            <li>UNIX Command Line</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>PHP</li>
+
+            <li>Python</li>
+            <li>Network Security</li>
+            <li>Linux</li>
+
+            <li>macOS</li>
+
+            <li>MySQL</li>
+            <li>MongoDB</li>
+
+            <li>Git</li>
+            <li>GitHub</li>
+        </ul>
+    </div>
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+
+            <div data-date="August 2012 – December 2015">
+                <h3>Programming Profesor</h3>
+                <h4>Basic C programming oriented to Robotics</h4>
+                <p>
+                    Worked for 3 years in a Robotics school giving classes to children and teens between ages 8 and 15.
+                </p>
+            </div>
+
+            <div data-date="August 2016 -  Today">
+                <h3>Universidad Anáhuac Mayab</h3>
+                <h4>University Projects</h4>
+                <p>
+                    Throughout my studies I've made projects on different areas,
+                    such as desktop and mobile development
+                    and design, network design, machine learning and cybersecurity.
+                </p>
+            </div>
+
+            <div data-date="January 2018 - Today">
+                <h3>CTO Genera</h3>
+                <h4>CTO of a leadership group in Anahuac Mayab University called "Genera"</h4>
+                <p>
+                    As CTO in Genera my job is to develop the group's iOS app and also to be the project manager
+                    of the Android app and Web Page.
+                </p>
+            </div>
+
+            <div data-date="August 2017 -  Today">
+                <h3>Technology Development Coordinator</h3>
+                <h4>Technology Development Coordinator in Anahuac Mayab University's Student Society called "FESAL"</h4>
+                <p>
+                    As Technology Development Coordinator my job is to develop the iOS app and also to be the project manager
+                    of the Android app and Web Page.
+                </p>
+            </div>
+            
+            <div data-date="August 2017 -  November 2017">
+                <h3>ACM Contest</h3>
+                <h4>230th place of the world in the ACM's Computer Science International Programming Contest</h4>
+                <p>
+                    With a group of 3 we went to ACM's International Programming Contest in wich we got the 230th place of the whole world.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        
+        <div class="education-block">
+            <h3>Universidad Anáhuac Mayab</h3>
+            <span class="education-date">August 2016 - June 2020</span>
+            <h4>Ingeniería en Informatica y Negocios Digitales (Engineering in Computer Science and Digital Business)</h4>
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <h2 class="heading">Contact</h2>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div id="contact-form">
+                    <form method="POST" action="https://formspree.io/jc_estevezr@hotmail.com">
+                        <input type="email" name="_replyto" placeholder="Email" required>
+                        <input type="text" name="_subject" placeholder="Subject">
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit">
+                            <i class="fa fa-send"></i> Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-sm-push-5 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-xs-6 col-sm-5 col-sm-pull-2 copyright">
+                    <p>
+                        <i class="fa fa-phone"></i> +52 (999) 27 15 671
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope-o"></i> jc_estevezr@hotmail.com
+                    </p>
+                </div>
+                <div class="col-xs-6 col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/JCTec" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/EstevezRJC" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:jc_estevezr@hotmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="tel:+5219992715671"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
     </script>
 
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
+
 </html>
